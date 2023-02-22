@@ -1,0 +1,270 @@
+digraph ninja {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	rankdir="LR"
+	node [fontsize=10, shape=box, height=0.25]
+	edge [fontsize=10]
+	
+	"campeon" [label="Campeon"]
+	"final" [label="Final"]
+	"tercerpuest" [label="Tercer Puesto"]
+	"cuartopuest" [label="Cuarto Puesto"]
+	"semifinal" [label="Semi Final"]
+	"cuartfinal" [label="Cuartos de Final"]
+	"octavfinal" [label="Octavos de Final"]
+	
+	"a-qatar" [label="Qatar"]
+	"a-senegal" [label="Senegal"]
+	"a-ecuador" [label="Ecuador"]
+	"a-pbajos" [label="Paises Bajos"]
+	
+	"a-qatar" -> "a-ecuador" [label="a1"]
+	"a-senegal" -> "a-pbajos" [label="a2"]
+	"a-qatar" -> "a-senegal" [label="a3"]
+	"a-ecuador" -> "a-pbajos" [label="a4"]
+	"a-qatar" -> "a-pbajos" [label="a5"]
+	"a-ecuador" -> "a-senegal" [label="a6"]
+
+	"a-qatar" -> "octavfinal" [label="Grupo A"]
+	"a-senegal" -> "octavfinal" [label="Grupo A"]
+	"a-ecuador" -> "octavfinal" [label="Grupo A"]	
+	"a-pbajos" -> "octavfinal" [label="Grupo A"]
+
+	"b-inglaterra" [label="Inglaterra"]
+	"b-iran" [label="Irán"]
+	"b-eeuu" [label="EEUU"]
+	"b-gales" [label="Gales"]
+	
+	"b-inglaterra" -> "b-iran" [label="b1"]
+	"b-eeuu" -> "b-gales" [label="b2"]
+	"b-iran" -> "b-gales" [label="b3"]
+	"b-inglaterra" -> "b-eeuu" [label="b4"]
+	"b-inglaterra" -> "b-gales" [label="b5"]
+	"b-iran" -> "b-eeuu" [label="b6"]
+	
+	"b-inglaterra" -> "octavfinal" [label="Grupo B"]
+	"b-eeuu" -> "octavfinal" [label="Grupo B"]	
+	"b-iran" -> "octavfinal" [label="Grupo B"]
+	"b-gales" -> "octavfinal" [label="Grupo B"]
+
+	"c-argentina" [label="Argentina"]
+	"c-mexico" [label="México"]
+	"c-asaudita" [label="Arabia Saudita"]
+	"c-polonia" [label="Polonia"]
+	
+	"c-argentina" -> "c-asaudita" [label="c1"]
+	"c-mexico" -> "c-polonia" [label="c2"]
+	"c-asaudita" -> "c-polonia" [label="c3"]
+	"c-argentina" -> "c-mexico" [label="c4"]
+	"c-argentina" -> "c-polonia" [label="c5"]
+	"c-asaudita" -> "c-mexico" [label="c6"]
+	
+	"c-argentina" -> "octavfinal" [label="Grupo C"]
+	"c-mexico" -> "octavfinal" [label="Grupo C"]
+	"c-polonia" -> "octavfinal" [label="Grupo C"]
+	"c-asaudita" -> "octavfinal" [label="Grupo C"]
+	
+	"d-dinamar" [label="Dinamarca"]
+	"d-francia" [label="Francia"]
+	"d-tunez" [label="Tunez"]
+	"d-australia" [label="Australia"]
+	
+	"d-dinamar" -> "d-tunez" [label="d1"]
+	"d-francia" -> "d-australia" [label="d2"]
+	"d-australia" -> "d-tunez" [label="d3"]
+	"d-francia" -> "d-dinamar" [label="d4"]
+	"d-australia" -> "d-dinamar" [label="d5"]
+	"d-francia" -> "d-tunez" [label="d6"]
+	
+	"d-dinamar" -> "octavfinal" [label="Grupo D"]
+	"d-francia" -> "octavfinal" [label="Grupo D"]
+	"d-australia" -> "octavfinal" [label="Grupo D"]
+	"d-tunez" -> "octavfinal" [label="Grupo D"]
+
+	"e-alemania" [label="Alemania"]
+	"e-spain" [label="España"]
+	"e-costarica" [label="Costa Rica"]
+	"e-japon" [label="Japón"]
+	
+	"e-alemania" -> "e-japon" [label="e1"]
+	"e-spain" -> "e-costarica" [label="e2"]
+	"e-costarica" -> "e-japon" [label="e3"]
+	"e-spain" -> "e-alemania" [label="e4"]
+	"e-spain" -> "e-japon" [label="e5"]
+	"e-costarica" -> "e-alemania" [label="e6"]
+
+	"e-alemania" -> "octavfinal" [label="Grupo E"]
+	"e-spain" -> "octavfinal" [label="Grupo E"]
+	"e-costarica" -> "octavfinal" [label="Grupo E"]
+	"e-japon" -> "octavfinal" [label="Grupo E"]
+	
+	"f-marruecos" [label="Marruecos"]
+	"f-belgica" [label="Bélgica"]
+	"f-canada" [label="Canadá"]
+	"f-croacia" [label="Croacia"]
+		
+	"f-marruecos" -> "f-croacia" [label="f1"]
+	"f-belgica" -> "f-canada" [label="f2"]
+	"f-belgica" -> "f-marruecos" [label="f3"]
+	"f-canada" -> "f-croacia" [label="f4"]
+	"f-belgica" -> "f-croacia" [label="f5"]
+	"f-canada" -> "f-marruecos" [label="f6"]
+	
+	"f-marruecos" -> "octavfinal" [label="Grupo F"]
+	"f-belgica" -> "octavfinal" [label="Grupo F"]
+	"f-canada" -> "octavfinal" [label="Grupo F"]
+	"f-croacia" -> "octavfinal" [label="Grupo F"]
+	
+	"g-suiza" [label="Suiza"]
+	"g-brasil" [label="Brazil"]
+	"g-serbia" [label="Serbia"]
+	"g-camerun" [label="Camerún"]
+	
+	"g-suiza" -> "g-camerun" [label="g1"]
+	"g-brasil" -> "g-serbia" [label="g2"]
+	"g-serbia" -> "g-camerun" [label="g3"]
+	"g-brasil" -> "g-suiza" [label="g4"]
+	"g-brasil" -> "g-camerun" [label="g5"]
+	"g-serbia" -> "g-suiza" [label="g6"]
+
+	"g-suiza" -> "octavfinal" [label="Grupo G"]
+	"g-brasil" -> "octavfinal" [label="Grupo G"]
+	"g-serbia" -> "octavfinal" [label="Grupo G"]
+	"g-camerun" -> "octavfinal" [label="Grupo G"]
+	
+	"h-uruguay" [label="Uruguay"]
+	"h-portugal" [label="Portugal"]
+	"h-ghana" [label="Ghana"]
+	"h-coreasur" [label="Corea del Sur"]
+
+	"h-uruguay" -> "h-coreasur" [label="h1"]
+	"h-portugal" -> "h-ghana" [label="h2"]
+	"h-ghana" -> "h-coreasur" [label="h3"]
+	"h-portugal" -> "h-uruguay" [label="h4"]
+	"h-portugal" -> "h-coreasur" [label="h5"]
+	"h-ghana" -> "h-uruguay" [label="h6"]
+	
+	"h-uruguay" -> "octavfinal" [label="Grupo H"]
+	"h-ghana" -> "octavfinal" [label="Grupo H"]
+	"h-portugal" -> "octavfinal" [label="Grupo H"]
+	"h-coreasur" -> "octavfinal" [label="Grupo H"]
+
+	"ganador-a" [label="Ganador A"]
+	"ganador-b" [label="Ganador B"]
+	"ganador-c" [label="Ganador C"]
+	"ganador-d" [label="Ganador D"]
+	"ganador-e" [label="Gganador E"]
+	"ganador-f" [label="Ganador F"]
+	"ganador-g" [label="Ganador G"]
+	"ganador-h" [label="Ganador H"]
+	
+	"segundo-a" [label="Segundo A"]
+	"segundo-b" [label="Segundo B"]
+	"segundo-c" [label="Segundo C"]
+	"segundo-d" [label="Segundo D"]
+	"segundo-e" [label="Segundo E"]
+	"segundo-f" [label="Segundo F"]
+	"segundo-g" [label="Segundo G"]
+	"segundo-h" [label="Segundo h"]
+	
+	"ganador-a" -> "segundo-b" [label="Octavos 1"]
+	"ganador-c" -> "segundo-d" [label="Octavos 2"]
+	"ganador-d" -> "segundo-c" [label="Octavos 3"]
+	"ganador-b" -> "segundo-a" [label="Octavos 4"]
+	"ganador-e" -> "segundo-f" [label="Octavos 5"]
+	"ganador-g" -> "segundo-h" [label="Octavos 6"]
+	"ganador-f" -> "segundo-e" [label="Octavos 7"]
+	"ganador-h" -> "segundo-g" [label="Octavos 8"]
+	
+	"octavfinal" -> "segundo-b"
+	"octavfinal" -> "segundo-c"
+	"octavfinal" -> "segundo-a"
+	"octavfinal" -> "segundo-e"
+	"octavfinal" -> "segundo-f"
+	"octavfinal" -> "segundo-g"
+	"octavfinal" -> "segundo-h"
+	"octavfinal" -> "segundo-d"
+	"octavfinal" -> "ganador-a"
+	"octavfinal" -> "ganador-b"
+	"octavfinal" -> "ganador-c"
+	"octavfinal" -> "ganador-d"
+	"octavfinal" -> "ganador-e"
+	"octavfinal" -> "ganador-f"
+	"octavfinal" -> "ganador-g"
+	"octavfinal" -> "ganador-h"
+	
+	"ganador-a" -> "gan-octf-1" 
+	"segundo-b" -> "gan-octf-1"
+	
+	"ganador-c" -> "gan-octf-2"
+	"segundo-d" -> "gan-octf-2"
+	
+	"ganador-d" -> "gan-octf-3"
+	"segundo-c" -> "gan-octf-3"
+
+	"ganador-b" -> "gan-octf-4"
+	 "segundo-a" -> "gan-octf-4"
+	
+	"ganador-e" -> "gan-octf-5"
+	"segundo-f" -> "gan-octf-5"
+
+	"ganador-g" -> "gan-octf-6"
+	"segundo-h" -> "gan-octf-6"
+
+	"ganador-f" -> "gan-octf-7"
+	"segundo-e" -> "gan-octf-7"	
+
+	"ganador-h" -> "gan-octf-8"
+	"segundo-g" -> "gan-octf-8"
+
+	"gan-octf-1" -> "gan-octf-2"
+	"gan-octf-3" -> "gan-octf-4"
+	"gan-octf-5" -> "gan-octf-6"
+	"gan-octf-7" -> "gan-octf-8"
+	
+	"gan-octf-1" -> "cuartfinal"
+	"gan-octf-3" -> "cuartfinal"
+	"gan-octf-5" -> "cuartfinal"
+	"gan-octf-7" -> "cuartfinal"
+	"gan-octf-2" -> "cuartfinal"
+	"gan-octf-4" -> "cuartfinal"
+	"gan-octf-6" -> "cuartfinal"
+	"gan-octf-8" -> "cuartfinal"
+	
+	"gan-cuart-a" -> "semifinal"
+	"gan-cuart-b" -> "semifinal"
+	"gan-cuart-c" -> "semifinal"
+	"gan-cuart-d" -> "semifinal"
+	
+	"cuartfinal" -> "gan-cuart-a"
+	"cuartfinal" -> "gan-cuart-b"
+	"cuartfinal" -> "gan-cuart-c"
+	"cuartfinal" -> "gan-cuart-d"
+	
+	"gan-cuart-a" -> "gan-cuart-c"
+	"gan-cuart-d" -> "gan-cuart-b"
+
+	"gan-semi-a" -> "gan-semi-b"
+
+	"seg-semi-a" -> "seg-semi-b"
+
+	"gan-semi-a" -> "final"
+	"gan-semi-b" -> "final"
+
+	"semifinal" -> "gan-semi-a"
+	"semifinal" -> "gan-semi-b"
+	"semifinal" -> "seg-semi-a"
+	"semifinal" -> "seg-semi-b"
+	
+	"seg-semi-a" -> "tercerpuest"
+	"seg-semi-b" -> "tercerpuest"
+
+	"seg-semi-a" -> "cuartopuest"
+	"seg-semi-b" -> "cuartopuest"
+
+	"final" -> "campeon"
+	
+	
+	
+	}
